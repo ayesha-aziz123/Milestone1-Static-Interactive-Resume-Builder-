@@ -3,32 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Milestone1-Static-Interactive-Resume-Builder-</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Static Resume Build by Ayesha</h1>
-    </header>
+    <section>
+      <div class="main">
+        <div id="images">
+          <img src="dp.jpg" alt="logo" />
+        </div>
 
-    <section id="personal-info">
-      <img src="dp.jpg" alt="Profile Picture" class="profile-pic" />
-      <h2>Personal Information</h2>
-      <p id="info"><strong>Name: </strong>Ayesha</p>
-      <p id="info"><strong>Email: </strong> moizs4644@gmail.com</p>
-      <p id="info"><strong>Contact: </strong>+923131148362</p>
+        <div class="info1">
+          <div class="two">
+            <h1 id="heading">Ayesha Aziz</h1>
+            <!-- <h3>Web developer</h3> -->
+
+            <div id="personal-info">
+              <h2 id="personal-head">Personal Information</h2>
+              <p id="info">
+                <strong style="color: black">Name: </strong>Ayesha Aziz
+              </p>
+              <a href="mailto:moizaman3623@gmail.com" id="info"
+                ><strong style="color: black">Email: </strong>
+                moizaman3623@gmail.com</a
+              >
+              <p id="info">
+                <strong style="color: black">Contact: </strong>+923131148362
+              </p>
+              <a
+                href="https://www.linkedin.com/in/ayesha-aziz-574780310/"
+                id="info"
+              >
+                <strong style="color: black">LinkedIn: </strong>Linkedin
+              </a>
+            </div>
+          </div>
+
+          <p id="para">
+            I am committed to honing my skills as I work towards becoming a
+            professional web developer, with a focus on continuous learning and
+            building more advanced projects in the future.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
+    <section id="education" class="">
+      <h2 id="abc">Education</h2>
       <ul>
-        <li>Intemediate Computer Information Technology Karachi 2024</li>
-        <li>Matric in Science 2021</li>
+        <li>2nd Year Student Of Pre-Medical - Government Girls College</li>
+        <li>2023 - 2024</li>
       </ul>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2 id="abc">Skills</h2>
       <ul id="skills-list">
         <li>HTML</li>
         <li>JavaScript</li>
@@ -40,14 +69,17 @@
     </section>
 
     <section id="work-experience">
-      <h2>Work Experience</h2>
+      <h2 id="abc">Work Experience</h2>
       <li>Frontend Developer</li>
-      <li>Developed responsive web applications, enhanced user interfaces, and optimized performance.</li>
+      <li>
+        Assisting in the development of user interfaces using HTML, CSS, and
+        JavaScript to create responsive and visually appealing designs.
+      </li>
+      <li>
+        Participating in code reviews and providing constructive feedback to
+        improve code quality and project performance.
+      </li>
     </section>
-
-    
-
-    <div id="generated-resume"></div>
 
     <script src="app.js"></script>
   </body>
