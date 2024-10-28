@@ -1,12 +1,15 @@
 "use strict";
 // Object.defineProperty(exports, "__esModule", { value: true });
-const toggleSkillsButton = document.getElementById('toggle-skills');
-const skillsList = document.getElementById('skills-list');
-toggleSkillsButton.addEventListener('click', () => {
-    if (skillsList.style.display === 'none' || !skillsList.style.display) {
-        skillsList.style.display = 'block';
+let skillBtn = document.querySelector("#skills-btn");
+let skillList = document.querySelector(".skills");
+skillBtn.innerHTML = "Hide Skills";
+skillBtn?.addEventListener("click", () => {
+    if (skillList.style.display === "none" || !skillList.style.display) {
+        skillBtn.innerHTML = "Hide Skills";
+        skillList.style.display = "block";
     }
     else {
-        skillsList.style.display = 'none';
+        skillList.style.display = "none";
+        skillBtn.innerHTML = "Show Skills";
     }
 });

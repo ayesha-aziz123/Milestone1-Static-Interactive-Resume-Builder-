@@ -1,16 +1,17 @@
+let skillBtn = document.querySelector("#skills-btn") as HTMLButtonElement;
+let skillList = document.querySelector(".skills") as HTMLElement;
 
-const toggleSkillsButton = document.getElementById('toggle-skills') as HTMLButtonElement;
-const skillsList = document.getElementById('skills-list') as HTMLUListElement;
+skillBtn.innerHTML = "Hide Skills";
 
-toggleSkillsButton.addEventListener('click', () => {
-    if (skillsList.style.display === 'none' || !skillsList.style.display) {
-        skillsList.style.display = 'block';
-        skillsList.innerText = "Hide"
-    } else {
-        skillsList.style.display = 'none';
+skillBtn?.addEventListener("click", () => {
+    if (skillList.style.display === "none" || !skillList.style.display) {
+        skillBtn.innerHTML = "Hide Skills"
+        skillList.style.display = "block"
     }
-});
+    else {
+        skillList.style.display = "none"
+        skillBtn.innerHTML = "Show Skills"
 
 
-
-
+    }
+})
